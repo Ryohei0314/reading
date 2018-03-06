@@ -1,6 +1,6 @@
 # reading
 
-> reading website
+> reading github version
 
 ## Build Setup
 
