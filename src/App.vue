@@ -7,7 +7,21 @@
       <li>シミルボンレビュー：<a v-bind:href="event.url">{{ event.report}}</a></li>
       <li>開催日：{{ event.date}}</li>
       <li>参加人数：{{ event.member}}人</li>
-      <li>開催場所：{{ event.address}}</li>
+      <li>開催場所：{{ event.address.address}}</li>
+      <gmap-map
+      :center="event.address.coordinate"
+      :zoom="17"
+      map-type-id="terrain"
+      style="width: 300px; height: 200px"
+      >
+        <gmap-marker
+      :key="index"
+      :position="event.address.coordinate"
+      :clickable="true"
+      :draggable="true"
+      @click="center=event.address.coordinate"
+    ></gmap-marker>
+      </gmap-map>
     </ul>
   </div>
 </template>
@@ -24,7 +38,10 @@ export default {
      url: "https://shimirubon.jp/reviews/1687389", 
      date:"2018/1/27", 
      member:"5",
-     address:"〒160-0023 東京都新宿区西新宿１丁目２３−１ かどやホテル 1F"
+     address:{
+         address:"〒160-0023 東京都新宿区西新宿１丁目２３−１ かどやホテル 1F",
+         coordinate: {lat:35.691725, lng:139.699220}
+     }
     },
     {title:"一人の哀しみは世界の終わりに匹敵する",
      author:"鹿島田真希著",
