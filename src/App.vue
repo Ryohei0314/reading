@@ -40,7 +40,7 @@ export default {
      member:"5",
      address:{
          address:"〒160-0023 東京都新宿区西新宿１丁目２３−１ かどやホテル 1F",
-         coordinate: {lat:35.691725, lng:139.699220}
+         coordinate: {lat:35.6897382,  lng:139.6961738}
      }
     },
     {title:"一人の哀しみは世界の終わりに匹敵する",
@@ -49,7 +49,10 @@ export default {
      url:"https://shimirubon.jp/reviews/1686192",
      date:"2017/11/12",
      member:"3",
-     address:"〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル"
+     address:{
+       address:"〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル",
+       coordinate:{lat:35.68137, lng:139.77014399999996}
+     }
     },
     {title:"悪童日記",
      author:"アゴタ・クリストフ著 堀茂樹訳",
@@ -57,7 +60,10 @@ export default {
      url:"https://shimirubon.jp/reviews/1684538",
      date:"2017/8/20",
      member:"3",
-     address:"〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル"
+     address:{
+       address:"〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル",
+       coordinate:{lat:35.68137, lng:139.77014399999996}
+     }
     },
     {title:"ウンコな議論",
      author:"H. G. フランクファート著 山形浩生訳",
@@ -65,7 +71,10 @@ export default {
      url:"https://shimirubon.jp/reviews/1683215",
      date:"2017/6/24",
      member:"2",
-     address:"〒100-0002 東京都千代田区皇居外苑１−１"
+     address:{
+       address:"〒100-0002 東京都千代田区皇居外苑１−１",
+       coordinate:{lat:35.6778686, lng:139.75550939999994}
+     }
     },
     {title:"御伽草子",
      author:"太宰治著",
@@ -73,7 +82,10 @@ export default {
      url:"https://shimirubon.jp/reviews/1681592",
      date:"2017/4/15",
      member:"2",
-     address:"〒104-0061 東京都中央区銀座５丁目６ 中央区銀座４丁目１−２"
+     address:{
+       address:"〒104-0061 東京都中央区銀座５丁目６ 中央区銀座４丁目１−２",
+       coordinate:{lat:35.6717519, lng:139.76430819999996}
+     }
     },
     {title:"アイの物語",
      author:"山本弘著",
@@ -81,7 +93,10 @@ export default {
      url:"https://shimirubon.jp/reviews/1677399",
      date:"2017/1/7",
      member:"3",
-     address:"〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル"
+     address:{
+       address:"〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル",
+       coordinate:{lat:35.68137, lng:139.77014399999996}
+     }
     },
     {title:"沈黙",
      author:"遠藤周作著",
@@ -89,7 +104,10 @@ export default {
      url:"https://shimirubon.jp/reviews/1675825",
      date:"2016/11/19",
      member:"2",
-     address:"〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル"
+     address:{
+       address:"〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル",
+       coordinate:{lat:35.68137, lng:139.77014399999996}
+     }
     },
     {title:"少女七竈と七人の可愛そうな大人",
      author:"桜庭一樹著",
@@ -97,7 +115,10 @@ export default {
      url:"https://shimirubon.jp/reviews/1673988",
      date:"2016/6/25",
      member:"2",
-     address:"〒145-0062 東京都大田区北千束１丁目５４−１１"
+     address:{
+       address:"〒145-0062 東京都大田区北千束１丁目５４−１１",
+       coordinate:{lat:35.6101302,lng: 139.68519270000002}
+     }
     }
     ]
     }
