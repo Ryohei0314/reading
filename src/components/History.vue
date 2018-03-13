@@ -1,17 +1,34 @@
 <template>
-  <div id="app">
-      <nav>
-          <router-link to="/">Top</router-link>
-          <router-link to="/schedule">Schedule</router-link>
-          <router-link to="/history">History</router-link>
-      </nav>
-      <router-view></router-view>
-  </div>
+    <div id="app">
+    <h1></h1>
+    <ul v-for="event in eventList">
+      <li>書名：{{ event.title}}</li>
+      <li>著訳者名：{{ event.author}}</li>
+      <li>シミルボンレビュー：<a v-bind:href="event.url">{{ event.report}}</a></li>
+      <li>開催日：{{ event.date}}</li>
+      <li>参加人数：{{ event.member}}人</li>
+      <li>開催場所：{{ event.address.address}}</li>
+      <gmap-map
+      :center="event.address.coordinate"
+      :zoom="17"
+      map-type-id="terrain"
+      style="width: 300px; height: 200px"
+      >
+        <gmap-marker
+      :key="index"
+      :position="event.address.coordinate"
+      :clickable="true"
+      :draggable="true"
+      @click="center=event.address.coordinate"
+    ></gmap-marker>
+      </gmap-map>
+    </ul>
+</div>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  name: 'History',
   data: function(){
     return{
       eventList:[
