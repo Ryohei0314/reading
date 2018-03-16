@@ -7,7 +7,9 @@
           <li><router-link to="/history">History</router-link></li>
           </ul>
       </nav>
+      <div class="header">
       <router-view></router-view>
+      </div>
   </div>
 </template>
 
@@ -84,6 +86,9 @@ a:hover {
     background-color: orange;   /*背景色の指定*/
     color: #fff;    /*文字色の変更*/
     transition: 0.5s;   /*ホバー時の動きをなめらかにする*/
+}
+.header {
+   clear: left; 
 }
 
 </style>
