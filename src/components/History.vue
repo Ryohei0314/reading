@@ -1,13 +1,12 @@
 <template>
     <div id="app">
-    <h1></h1>
-    <ul v-for="event in eventList">
-      <li>書名：{{ event.title}}</li>
-      <li>著訳者名：{{ event.author}}</li>
-      <li>シミルボンレビュー：<a v-bind:href="event.url">{{ event.report}}</a></li>
-      <li>開催日：{{ event.date}}</li>
-      <li>参加人数：{{ event.member}}人</li>
-      <li>開催場所：{{ event.address.address}}</li>
+    <ul v-for="event in eventList" class="book-list">
+      <li class="book-item">書名：{{ event.title}}</li>
+      <li class="book-item">著訳者名：{{ event.author}}</li>
+      <li class="book-item">シミルボンレビュー：<a v-bind:href="event.url">{{ event.report}}</a></li>
+      <li class="book-item">開催日：{{ event.date}}</li>
+      <li class="book-item">参加人数：{{ event.member}}人</li>
+      <li class="book-item">開催場所：{{ event.address.address}}</li>
       <gmap-map
       :center="event.address.coordinate"
       :zoom="17"
@@ -127,15 +126,7 @@ export default {
 
 </script>
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: none;
-  margin-top: 60px;
-}
-ul, ol{
+.book-list, ol{
   list-style-type: none;
   color: black;/*文字色*/
   border-top: solid 1px orange;/*破線 太さ 色*/
@@ -146,7 +137,7 @@ ul, ol{
   margin-right: 350px;
 }
 
-ul li, ol li {
+.book-item{
   line-height: 1.5; /*文の行高*/
   padding: 0.5em 0; /*前後の文との余白*/
 }

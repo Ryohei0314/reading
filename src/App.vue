@@ -1,9 +1,11 @@
 <template>
   <div id="app">
-      <nav>
-          <router-link to="/">Top</router-link>
-          <router-link to="/schedule">Schedule</router-link>
-          <router-link to="/history">History</router-link>
+      <nav class="navigation">
+          <ul>
+          <li><router-link to="/">Top</router-link></li>
+          <li><router-link to="/schedule">Schedule</router-link></li>
+          <li><router-link to="/history">History</router-link></li>
+          </ul>
       </nav>
       <router-view></router-view>
   </div>
@@ -11,101 +13,7 @@
 
 <script>
 export default {
-  name: 'App',
-  data: function(){
-    return{
-      eventList:[
-    {title:"月と六ペンス",
-     author:"サマセット・モーム著 行方昭夫訳",
-     report:"理想はあるか～得ることと捨てること",
-     url: "https://shimirubon.jp/reviews/1687389", 
-     date:"2018/1/27", 
-     member:"5",
-     address:{
-         address:"〒160-0023 東京都新宿区西新宿１丁目２３−１ かどやホテル 1F",
-         coordinate: {lat:35.6897382,  lng:139.6961738}
-     }
-    },
-    {title:"一人の哀しみは世界の終わりに匹敵する",
-     author:"鹿島田真希著",
-     report:"あふれ出る聖性",
-     url:"https://shimirubon.jp/reviews/1686192",
-     date:"2017/11/12",
-     member:"3",
-     address:{
-       address:"〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル",
-       coordinate:{lat:35.68137, lng:139.77014399999996}
-     }
-    },
-    {title:"悪童日記",
-     author:"アゴタ・クリストフ著 堀茂樹訳",
-     report:"双子の倫理観",
-     url:"https://shimirubon.jp/reviews/1684538",
-     date:"2017/8/20",
-     member:"3",
-     address:{
-       address:"〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル",
-       coordinate:{lat:35.68137, lng:139.77014399999996}
-     }
-    },
-    {title:"ウンコな議論",
-     author:"H. G. フランクファート著 山形浩生訳",
-     report:"前提曖昧にして議論ウンコとなる",
-     url:"https://shimirubon.jp/reviews/1683215",
-     date:"2017/6/24",
-     member:"2",
-     address:{
-       address:"〒100-0002 東京都千代田区皇居外苑１−１",
-       coordinate:{lat:35.6778686, lng:139.75550939999994}
-     }
-    },
-    {title:"御伽草子",
-     author:"太宰治著",
-     report:"処女と残酷",
-     url:"https://shimirubon.jp/reviews/1681592",
-     date:"2017/4/15",
-     member:"2",
-     address:{
-       address:"〒104-0061 東京都中央区銀座５丁目６ 中央区銀座４丁目１−２",
-       coordinate:{lat:35.6717519, lng:139.76430819999996}
-     }
-    },
-    {title:"アイの物語",
-     author:"山本弘著",
-     report:"フィクションはあなたの人生でどういう意味を持っているか",
-     url:"https://shimirubon.jp/reviews/1677399",
-     date:"2017/1/7",
-     member:"3",
-     address:{
-       address:"〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル",
-       coordinate:{lat:35.68137, lng:139.77014399999996}
-     }
-    },
-    {title:"沈黙",
-     author:"遠藤周作著",
-     report:"信じること",
-     url:"https://shimirubon.jp/reviews/1675825",
-     date:"2016/11/19",
-     member:"2",
-     address:{
-       address:"〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル",
-       coordinate:{lat:35.68137, lng:139.77014399999996}
-     }
-    },
-    {title:"少女七竈と七人の可愛そうな大人",
-     author:"桜庭一樹著",
-     report:"突き破る、ぐるぐるまわる",
-     url:"https://shimirubon.jp/reviews/1673988",
-     date:"2016/6/25",
-     member:"2",
-     address:{
-       address:"〒145-0062 東京都大田区北千束１丁目５４−１１",
-       coordinate:{lat:35.6101302,lng: 139.68519270000002}
-     }
-    }
-    ]
-    }
-  }
+  name: 'App'
 }
 
 </script>
@@ -118,19 +26,64 @@ export default {
   color: none;
   margin-top: 60px;
 }
-ul, ol{
-  list-style-type: none;
-  color: black;/*文字色*/
-  border-top: solid 1px orange;/*破線 太さ 色*/
-  border-bottom: solid 1px orange;/*破線 太さ 色*/
-  background: #fefff1; /*背景色*/
-  text-align:left;
-  margin-left: 350px;
-  margin-right: 350px;
+
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+body{
+font: 14px/1.6 "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;
+margin:0;
+color:#313131;
 }
 
-ul li, ol li {
-  line-height: 1.5; /*文の行高*/
-  padding: 0.5em 0; /*前後の文との余白*/
+img{
+outline:none;
+border-style:none;
 }
+
+a{
+    color:blue;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+a:visited{
+    color:blue;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+a:hover {
+    color: #F5A862;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.navigation ul{
+    width: 60%; /*横幅の指定*/
+    margin-left: 20%;   /*左端から20%右側に動かす*/
+}
+.navigation li{
+    width: calc(25% - 2px); /*横幅の指定（線の分をマイナスする）*/
+    border-left: 1px solid orange;  /*線を描く*/
+    text-align: center; /*文字を中央に*/
+    float: left;    /*左から並べる*/
+}
+.navigation li:last-child{
+    border-right: 1px solid orange; /*li要素の最後の物は右側に線を描く*/
+}
+.navigation a{
+    display: block; /*1つのli全体にリンクを有効にする*/
+    text-decoration: none;  /*ブラウザ標準のリンク装飾をオフに*/
+    color:#313131;  /*文字色の変更*/
+    font-size: 110%;    /*フォントサイズの指定*/
+    letter-spacing: 5px;    /*文字と文字の間隔をあける*/
+    font-weight: 400;   /*文字の太さを調整*/
+    line-height: 45px;  /*行間の指定（ナビボタンの高さ指定）*/
+}
+.navigation a:hover{
+    background-color: orange;   /*背景色の指定*/
+    color: #fff;    /*文字色の変更*/
+    transition: 0.5s;   /*ホバー時の動きをなめらかにする*/
+}
+
 </style>
