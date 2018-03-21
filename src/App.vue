@@ -1,13 +1,17 @@
 <template>
   <div id="app">
+      <header class="header">
+        <h1>読書会話</h1>
+      </header>
       <nav class="navigation">
           <ul>
-          <li><router-link to="/">Top</router-link></li>
-          <li><router-link to="/schedule">Schedule</router-link></li>
-          <li><router-link to="/history">History</router-link></li>
+          <li><router-link to="/">トップ</router-link></li>
+          <li><router-link to="/schedule">開催予定</router-link></li>
+          <li><router-link to="/history">これまでの記録</router-link></li>
+          <li><router-link to="/contact">お問い合わせ</router-link></li>
           </ul>
       </nav>
-      <div class="header">
+      <div class="content">
       <router-view></router-view>
       </div>
   </div>
@@ -74,6 +78,8 @@ a:hover {
     border-right: 1px solid orange; /*li要素の最後の物は右側に線を描く*/
 }
 .navigation a{
+    border-top: 1px solid orange;
+    border-bottom: 1px solid orange; 
     display: block; /*1つのli全体にリンクを有効にする*/
     text-decoration: none;  /*ブラウザ標準のリンク装飾をオフに*/
     color:#313131;  /*文字色の変更*/
@@ -81,6 +87,7 @@ a:hover {
     letter-spacing: 5px;    /*文字と文字の間隔をあける*/
     font-weight: 400;   /*文字の太さを調整*/
     line-height: 45px;  /*行間の指定（ナビボタンの高さ指定）*/
+    overflow: hidden;   /*おまじない*/
 }
 .navigation a:hover{
     background-color: orange;   /*背景色の指定*/
@@ -89,6 +96,11 @@ a:hover {
 }
 .header {
    clear: left; 
+   font-size: 200%;    /*フォントサイズの指定*/
+   letter-spacing: 5px;    /*文字と文字の間隔をあける*/
+   font-weight: 400;   /*文字の太さを調整*/
+   line-height: 45px;  /*行間の指定（ナビボタンの高さ指定）*/
+   overflow: hidden;   /*おまじない*/
 }
 
 </style>

@@ -123,7 +123,6 @@ export default {
     }
   }
 }
-
 </script>
 <style>
 .book-list, ol{
