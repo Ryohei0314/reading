@@ -1,5 +1,14 @@
 <template>
-    <div id="app">{{msg}}</div>
+    <div id="app">
+      <article>
+          <section>
+              <h1>開催予定</h1>
+              <p class="body">
+             次回開催予定は4月7日（土）
+              </p>
+          </section>
+      </article>
+    </div>
 </template>
 
 <script>
@@ -7,7 +16,6 @@ export default {
   name: 'schedule',
  data: function(){
     return {
-      msg: '次回の開催予定は4月7日（土）。'
     }
   }
 }
@@ -17,16 +25,27 @@ export default {
 <style scoped>
 h1, h2 {
   font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
+  font-size:120%; /*フォントサイズの調整*/
+  border-top: 1px solid orange;   /*上部の線の色を指定*/
+  border-bottom: 1px solid orange;    /*下部の線の色を指定*/
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
 }
 a {
   color: #42b983;
+}
+article{
+    display: block;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.body {
+  margin-top: 20px;  
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
 }
 </style>
