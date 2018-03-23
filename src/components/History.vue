@@ -7,6 +7,7 @@
       <li class="book-item">開催日：{{ event.date}}</li>
       <li class="book-item">参加人数：{{ event.member}}人</li>
       <li class="book-item">開催場所：{{ event.address.address}}</li>
+      <img v-bind:src="event.image" />
       <gmap-map
       :center="event.address.coordinate"
       :zoom="17"
@@ -40,7 +41,8 @@ export default {
      address:{
          address:"〒160-0023 東京都新宿区西新宿１丁目２３−１ かどやホテル 1F",
          coordinate: {lat:35.6897382,  lng:139.6961738}
-     }
+     },
+     image:"https://cover.openbd.jp/9784102130278.jpg"
     },
     {title:"一人の哀しみは世界の終わりに匹敵する",
      author:"鹿島田真希著",
@@ -51,7 +53,8 @@ export default {
      address:{
        address:"〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル",
        coordinate:{lat:35.68137, lng:139.77014399999996}
-     }
+     },
+     image: "https://cover.openbd.jp/9784309015491.jpg"
     },
     {title:"悪童日記",
      author:"アゴタ・クリストフ著 堀茂樹訳",
@@ -62,7 +65,8 @@ export default {
      address:{
        address:"〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル",
        coordinate:{lat:35.68137, lng:139.77014399999996}
-     }
+     },
+     image: "https://cover.openbd.jp/9784151200021.jpg"
     },
     {title:"ウンコな議論",
      author:"H. G. フランクファート著 山形浩生訳",
@@ -73,7 +77,8 @@ export default {
      address:{
        address:"〒100-0002 東京都千代田区皇居外苑１−１",
        coordinate:{lat:35.6778686, lng:139.75550939999994}
-     }
+     },
+     image: "https://cover.openbd.jp/9784480097606.jpg"
     },
     {title:"御伽草子",
      author:"太宰治著",
@@ -95,7 +100,8 @@ export default {
      address:{
        address:"〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル",
        coordinate:{lat:35.68137, lng:139.77014399999996}
-     }
+     },
+     image: "https://cover.openbd.jp/9784044601164.jpg"
     },
     {title:"沈黙",
      author:"遠藤周作著",
@@ -106,7 +112,8 @@ export default {
      address:{
        address:"〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル",
        coordinate:{lat:35.68137, lng:139.77014399999996}
-     }
+     },
+     image:"https://cover.openbd.jp/9784101123158.jpg"
     },
     {title:"少女七竈と七人の可愛そうな大人",
      author:"桜庭一樹著",
@@ -117,7 +124,8 @@ export default {
      address:{
        address:"〒145-0062 東京都大田区北千束１丁目５４−１１",
        coordinate:{lat:35.6101302,lng: 139.68519270000002}
-     }
+     },
+     image: "https://cover.openbd.jp/9784044281052.jpg"
     }
     ]
     }
