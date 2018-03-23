@@ -2,7 +2,7 @@
     <div id="app">
     <article>
        <h2>これまでの記録</h2>
-       <h3>書名とレポート記事を載せています。</h3>
+       <h3>書名とレポート記事へのリンクを載せています。</h3>
     </article>
     <ul v-for="event in eventList" class="book-list">
       <li class="book-item">書名：{{ event.title}}</li>
@@ -122,6 +122,7 @@ h2 {
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 h3 {
   font-weight: normal;
