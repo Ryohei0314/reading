@@ -2,7 +2,7 @@
     <div id="app">
       <article>
           <section>
-              <h1>開催予定</h1>
+              <h2>開催予定</h2>
               <p class="body">
              次回開催予定は4月7日（土）
               </p>
@@ -23,7 +23,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h2 {
   font-weight: normal;
   font-size:120%; /*フォントサイズの調整*/
   border-top: 1px solid orange;   /*上部の線の色を指定*/
