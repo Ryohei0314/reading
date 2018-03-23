@@ -1,27 +1,16 @@
 <template>
     <div id="app">
+    <article>
+       <h2>これまでの記録</h2>
+       <h3>書名とレポート記事へのリンクを載せています。</h3>
+    </article>
     <ul v-for="event in eventList" class="book-list">
       <li class="book-item">書名：{{ event.title}}</li>
       <li class="book-item">著訳者名：{{ event.author}}</li>
-      <li class="book-item">シミルボンレビュー：<a v-bind:href="event.url">{{ event.report}}</a></li>
+      <li class="book-item">シミルボンレビュー：<a v-bind:href="event.url" target="_blank">{{ event.report}}</a></li>
       <li class="book-item">開催日：{{ event.date}}</li>
       <li class="book-item">参加人数：{{ event.member}}人</li>
-      <li class="book-item">開催場所：{{ event.address.address}}</li>
       <img v-bind:src="event.image" />
-      <gmap-map
-      :center="event.address.coordinate"
-      :zoom="17"
-      map-type-id="terrain"
-      style="width: 300px; height: 200px"
-      >
-        <gmap-marker
-      :key="index"
-      :position="event.address.coordinate"
-      :clickable="true"
-      :draggable="true"
-      @click="center=event.address.coordinate"
-    ></gmap-marker>
-      </gmap-map>
     </ul>
 </div>
 </template>
@@ -133,15 +122,38 @@ export default {
 }
 </script>
 <style>
+h2 {
+  font-weight: normal;
+  font-size:120%; /*フォントサイズの調整*/
+  border-top: 1px solid orange;   /*上部の線の色を指定*/
+  border-bottom: 1px solid orange;    /*下部の線の色を指定*/
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+h3 {
+  font-weight: normal;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+article{
+    display: block;
+    width: 60%;
+    margin-left: 20%;
+    overflow: hidden;
+}
 .book-list, ol{
   list-style-type: none;
   color: black;/*文字色*/
-  border-top: solid 1px orange;/*破線 太さ 色*/
-  border-bottom: solid 1px orange;/*破線 太さ 色*/
+  border-top: solid 2px black;/*破線 太さ 色*/
+  border-bottom: solid 2px black;/*破線 太さ 色*/
   background: #fefff1; /*背景色*/
   text-align:left;
-  margin-left: 350px;
-  margin-right: 350px;
+  margin-left: 28%;
+  margin-right: 28%;
+  margin-bottom: 10px;
 }
 
 .book-item{
