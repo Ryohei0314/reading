@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-    <article>
+    <article class="article">
        <h2>これまでの記録</h2>
        <h3>書名とレポート記事へのリンクを載せています。</h3>
     </article>
@@ -121,7 +121,7 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
 h2 {
   font-weight: normal;
   font-size:120%; /*フォントサイズの調整*/
@@ -138,7 +138,7 @@ h3 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-article{
+.article{
     display: block;
     width: 60%;
     margin-left: 20%;
