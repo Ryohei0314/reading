@@ -8,8 +8,10 @@
               </p>
               <p2>
                 テーマ本：名人伝（中島敦著）
-                トークテーマ</p2>
-                <ol class="schedule">
+              </p2></br>
+              <p3>トークテーマ</p3></br>
+              <p4>～読んで話しやすいようにテーマを設けますが、当日は必ずしもこのテーマに沿う必要はありません～</p4>
+                <ol class="schedule" type="1">
                   <li class="theme">『名人伝』の好きな点または嫌な点、よくわからない点などについて</li>
                   <li class="theme">紀昌は、甘蠅老師を越えたと言えるか</li>
                   <li class="theme">自分の仕事、趣味などへの態度と『名人伝』で出てきた技芸の極め方を比較してみてどうか</li>
@@ -66,9 +68,12 @@ a {
   border-bottom: solid 2px black;/*破線 太さ 色*/
   background: #fefff1; /*背景色*/
   text-align:left;
-  margin-left: 28%;
-  margin-right: 28%;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-bottom: 10px;
+	list-style-type: decimal;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 .theme, li{
   
