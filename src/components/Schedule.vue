@@ -1,7 +1,6 @@
 <template>
     <div id="app">
       <article class="article">
-          <section>
               <h2>開催予定</h2>
               <p class="body">
              次回開催予定は2018年4月7日（土）
@@ -19,7 +18,6 @@
                 </ol>
               
               
-          </section>
       </article>
     </div>
 </template>
