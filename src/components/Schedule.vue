@@ -69,6 +69,7 @@ a {
   margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 10px;
+  margin-top: 10px;
 	list-style-type: decimal;
 	padding-left: 30px;
 	padding-right: 30px;
