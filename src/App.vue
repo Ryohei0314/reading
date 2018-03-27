@@ -6,6 +6,7 @@
       <nav class="navigation">
           <ul>
           <li><router-link to="/">トップ</router-link></li>
+          <li><router-link to="/concept">コンセプト</router-link></li>
           <li><router-link to="/schedule">開催予定</router-link></li>
           <li><router-link to="/history">これまでの記録</router-link></li>
           <li><router-link to="/contact">お問い合わせ</router-link></li>
@@ -67,9 +68,10 @@ a:hover {
 .navigation ul{
     width: 60%; /*横幅の指定*/
     margin-left: 20%;   /*左端から20%右側に動かす*/
+    text-align: justify;
 }
 .navigation li{
-    width: calc(25% - 2px); /*横幅の指定（線の分をマイナスする）*/
+    width: calc(20% - 2px); /*横幅の指定（線の分をマイナスする）*/
     border-left: 1px solid orange;  /*線を描く*/
     text-align: center; /*文字を中央に*/
     float: left;    /*左から並べる*/

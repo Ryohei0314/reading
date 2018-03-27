@@ -1,7 +1,6 @@
 <template>
     <div id="app">
       <article class="article">
-          <section>
               <h2>開催予定</h2>
               <p class="body">
              次回開催予定は2018年4月7日（土）
@@ -19,7 +18,6 @@
                 </ol>
               
               
-          </section>
       </article>
     </div>
 </template>
@@ -71,6 +69,7 @@ a {
   margin-left: 15%;
   margin-right: 15%;
   margin-bottom: 10px;
+  margin-top: 10px;
 	list-style-type: decimal;
 	padding-left: 30px;
 	padding-right: 30px;

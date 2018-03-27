@@ -5,9 +5,9 @@
               <h2>連絡先</h2>
             <p>
              <ul>
-              <li><a href="https://twitter.com/nattogohan_suki?lang=ja" target="_blank">Twitter</a></li>
-              <li><a href="https://www.facebook.com/profile.php?id=100011457974455" target="_blank">Facebook</a></li>
-              <li><a href="mailto:reading.legendre@gmail.com?subject=読書会参加申し込み">Mail</a></li>
+              <li><a href="https://twitter.com/nattogohan_suki?lang=ja" target="_blank"><img src="./Twitter.png" width="8%" height="8%">Twitter</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=100011457974455" target="_blank"><img src="./FB.png" width="5%" height="5%">Facebook</a></li>
+              <li><a href="mailto:reading.legendre@gmail.com?subject=読書会参加申し込み"><img src="./mail.jpg" width="4%" height="4%">Mail</a></li>
               </ul>
             </p>  
           </section>
