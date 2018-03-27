@@ -4,7 +4,7 @@
           <section>
               <h2>楽しく読書をしませんか</h2>
               <p class="body">
-                ●●●●では、現在ふた月に一回ほどのペースで読書会を行っています。「１冊の本を通して雑談をする」ことが主な活動です。ジャンルは問わず、１冊の本を話題にいろんな話をします。
+                読書会話では、現在ふた月に一回ほどのペースで読書会を行っています。「１冊の本を通して雑談をする」ことが主な活動です。ジャンルは問わず、１冊の本を話題にいろんな話をします。
               </p>
               <h3 class="abstract">開催概要</h3>
               <ol class="abstract">
@@ -40,10 +40,14 @@ h3{
   font-weight: normal;
   font-size:120%; /*フォントサイズの調整*/
   border-bottom: 1px solid orange;    /*下部の線の色を指定*/
-  width:200px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 30%;
+  margin-right: 30%;
   margin-top: 10px;
+  width: 40%;
+}
+ol{
+  text-align: left;
+  padding-left:40%;
 }
 a {
   color: #42b983;
@@ -58,10 +62,9 @@ article{
 .abstract{
   display: block;
   list-style-type: decimal;
-  text-align: center;
 }
 .body {
-  margin-top: 20px;  
+  margin-top: 20px;
   margin-left: 100px;
   margin-right: 100px;
   margin-bottom: 20px;
