@@ -11,10 +11,8 @@
       <li class="book-item">シミルボンレビュー：<a v-bind:href="event.url" target="_blank">{{ event.report}}</a></li>
       <li class="book-item">開催日：{{ event.date}}</li>
       <li class="book-item">参加人数：{{ event.member}}人</li>
+      <img class="image2" v-bind:src="event.image" width="20%" height="20%"/>
      </ul>
-     <div> 
-      <img v-bind:src="event.image" width="20%" height="20%" class="image2"/>
-     </div>
     </div>
     </div>
 </template>
@@ -162,7 +160,7 @@
     }
     .image2{
         align-text: center;
-        margin left: 100%;
+        margin-left: 40%;
     }
 
     .list,

@@ -46,24 +46,14 @@ img{
 outline:none;
 border-style:none;
 }
-
-a{
-    color:blue;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-a:visited{
-    color:blue;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-a:hover {
-    color: #F5A862;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
+.header {
+   clear: left; 
+   font-size: 200%;    /*フォントサイズの指定*/
+   letter-spacing: 5px;    /*文字と文字の間隔をあける*/
+   font-weight: 400;   /*文字の太さを調整*/
+   line-height: 45px;  /*行間の指定（ナビボタンの高さ指定）*/
+   margin-bottom: 10px;
+   overflow: hidden;   /*おまじない*/
 }
 .navigation ul{
     width: 60%; /*横幅の指定*/
@@ -96,13 +86,6 @@ a:hover {
     color: #fff;    /*文字色の変更*/
     transition: 0.5s;   /*ホバー時の動きをなめらかにする*/
 }
-.header {
-   clear: left; 
-   font-size: 200%;    /*フォントサイズの指定*/
-   letter-spacing: 5px;    /*文字と文字の間隔をあける*/
-   font-weight: 400;   /*文字の太さを調整*/
-   line-height: 45px;  /*行間の指定（ナビボタンの高さ指定）*/
-   overflow: hidden;   /*おまじない*/
-}
+
 
 </style>
