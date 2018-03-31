@@ -30,7 +30,7 @@ export default {
     }
   }
 </script>
-<style scoped media="screen and (max-width:800px)">
+<style media="screen and (max-width:800px)" scoped>
 article{
     display: block;
     width: 60%;
