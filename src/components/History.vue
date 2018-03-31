@@ -5,16 +5,18 @@
        <h3>書名とレポート記事へのリンクを載せています。</h3>
     </article>
     <div v-for="event in eventList" class="list">
-    <ul class="book-list">
+     <ul class="book-list">
       <li class="book-item">書名：{{ event.title}}</li>
       <li class="book-item">著訳者名：{{ event.author}}</li>
       <li class="book-item">シミルボンレビュー：<a v-bind:href="event.url" target="_blank">{{ event.report}}</a></li>
       <li class="book-item">開催日：{{ event.date}}</li>
       <li class="book-item">参加人数：{{ event.member}}人</li>
-    </ul>
-      <img v-bind:src="event.image" width="10%" height="10%" class="image"/>
+     </ul>
+     <div> 
+      <img v-bind:src="event.image" width="20%" height="20%" class="image2"/>
+     </div>
     </div>
-</div>
+    </div>
 </template>
 
 <script>
@@ -27,7 +29,7 @@
                         author: "サマセット・モーム著 行方昭夫訳",
                         report: "理想はあるか～得ることと捨てること",
                         url: "https://shimirubon.jp/reviews/1687389",
-                        date: "2018/1/27",
+                        date: "2018/1/27 Sat",
                         member: "5",
                         address: {
                             address: "〒160-0023 東京都新宿区西新宿１丁目２３−１ かどやホテル 1F",
@@ -40,7 +42,7 @@
                         author: "鹿島田真希著",
                         report: "あふれ出る聖性",
                         url: "https://shimirubon.jp/reviews/1686192",
-                        date: "2017/11/12",
+                        date: "2017/11/12 Sun",
                         member: "3",
                         address: {
                             address: "〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル",
@@ -53,7 +55,7 @@
                         author: "アゴタ・クリストフ著 堀茂樹訳",
                         report: "双子の倫理観",
                         url: "https://shimirubon.jp/reviews/1684538",
-                        date: "2017/8/20",
+                        date: "2017/8/20 Sun",
                         member: "3",
                         address: {
                             address: "〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル",
@@ -66,7 +68,7 @@
                         author: "H. G. フランクファート著 山形浩生訳",
                         report: "前提曖昧にして議論ウンコとなる",
                         url: "https://shimirubon.jp/reviews/1683215",
-                        date: "2017/6/24",
+                        date: "2017/6/24 Sat",
                         member: "2",
                         address: {
                             address: "〒100-0002 東京都千代田区皇居外苑１−１",
@@ -79,7 +81,7 @@
                         author: "太宰治著",
                         report: "処女と残酷",
                         url: "https://shimirubon.jp/reviews/1681592",
-                        date: "2017/4/15",
+                        date: "2017/4/15 Sat",
                         member: "2",
                         address: {
                             address: "〒104-0061 東京都中央区銀座５丁目６ 中央区銀座４丁目１−２",
@@ -91,7 +93,7 @@
                         author: "山本弘著",
                         report: "フィクションはあなたの人生でどういう意味を持っているか",
                         url: "https://shimirubon.jp/reviews/1677399",
-                        date: "2017/1/7",
+                        date: "2017/1/7 Sat",
                         member: "3",
                         address: {
                             address: "〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル",
@@ -104,7 +106,7 @@
                         author: "遠藤周作著",
                         report: "信じること",
                         url: "https://shimirubon.jp/reviews/1675825",
-                        date: "2016/11/19",
+                        date: "2016/11/19 Sat",
                         member: "2",
                         address: {
                             address: "〒103-0028 東京都中央区八重洲１丁目６−１７ 八重洲勧業ビル",
@@ -117,7 +119,7 @@
                         author: "桜庭一樹著",
                         report: "突き破る、ぐるぐるまわる",
                         url: "https://shimirubon.jp/reviews/1673988",
-                        date: "2016/6/25",
+                        date: "2016/6/25 Sat",
                         member: "2",
                         address: {
                             address: "〒145-0062 東京都大田区北千束１丁目５４−１１",
@@ -157,6 +159,10 @@
         width: 60%;
         margin-left: 20%;
         overflow: hidden;
+    }
+    .image2{
+        align-text: center;
+        margin left: 100%;
     }
 
     .list,

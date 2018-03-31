@@ -4,7 +4,8 @@
           <section>
               <h2>楽しく読書をしませんか</h2>
               <p class="body">
-                読書会話では、現在ふた月に一回ほどのペースで読書会を行っています。「１冊の本を通して雑談をする」ことが主な活動です。ジャンルは問わず、１冊の本を話題にいろんな話をします。
+                “Hon de Talk”では、現在2～3ヵ月に一回ほどのペースで読書会を行っています。</p>
+              <p class="body">“１冊の本を通して雑談をする”ことが主な活動です。ジャンルは問わず、１冊の本を話題にいろんな話をします。
               </p>
               <h3 class="abstract">開催概要</h3>
               <ol class="abstract">
@@ -35,6 +36,7 @@ h2 {
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 h3{
   font-weight: normal;
@@ -55,6 +57,7 @@ a {
 article{
     display: block;
     width: 60%;
+    margin-top: 20px;
     margin-left: 20%;
     margin-bottom: 20px;
     overflow: hidden;
@@ -64,10 +67,8 @@ article{
   list-style-type: decimal;
 }
 .body {
-  margin-top: 20px;
   margin-left: 100px;
   margin-right: 100px;
-  margin-bottom: 20px;
   text-align: left
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
       <header class="header">
-        <h1>読書会話</h1>
+        <h1>Hon de Talk</h1>
       </header>
       <nav class="navigation">
           <ul>
